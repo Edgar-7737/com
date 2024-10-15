@@ -1,0 +1,215 @@
+.model-box-packages{/* Caja para paquetes, es por que es mas grande y se divide en dos secciones*/
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 600px;
+  padding: 8% 0 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  max-width: 600px;
+  margin: 100px auto 100px;
+  padding: 45px;
+}
+.model-box-default{/* Cajas por defecto para los modelos, se ser necesario se crear mas cajas espesificas*/
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 120%;
+  padding:  8% 0 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  max-width: 600px;
+  margin: 100px auto 100px;
+  padding: 45px;
+}
+
+.form-container-model {/*sirve para crear una caja para dividirla */
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container-model .form-section-model {/*divide la caja junto con la clase de arriba */
+  flex: 1;
+  padding: 10px;
+}
+
+.form-container-model .section-radiobox{/*particion de la seccions de radio de packages*/
+  
+    flex: 1;
+    padding: 10px;
+    /* margin: 60px 0px 0px 50px; */
+  
+}
+/*ejemplo de caja para los formularios*/
+.model-form {
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+.radio-input {  /*estilos del input de tipo radio*/
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 15px;
+  height: 15px; 
+  border-style: none;
+  cursor: pointer;
+}
+
+.radio-input:hover {
+  background-color: #007bff; /* Cambia el color de fondo cuando está seleccionado */
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*Inicio y registro*/
+.register-box {
+  width: 600px;
+  padding: 8% 0 0;
+  margin: auto;
+
+}
+
+.form-container {/*contener para el register, para realizar particiones*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container .form-section {/*secciones del register*/
+    flex: 1;
+    padding: 10px;
+}
+
+.login-box { /*cajas del login*/
+    width: 300px;
+    padding: 8% 0 0;
+    margin: auto;
+
+  }
+  .login-register-form { /*estilo de login y register*/
+    font-family: "Roboto", sans-serif;
+    color: #2e2e2e;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 600px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+.input-box { /*estilos del inputs de los formulario*/
+  background: #d8e7d7 ;
+    width: 100%;
+    border-style:unset;
+    margin: 0 0 15px;
+    padding: 9px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 7px;
+  }
+
+
+.button-login-register { /*boton para los los formularios*/
+    outline: 0;
+    width: 100%;
+    padding: 9px;
+    margin: 0 0 15px;
+    font-size: 14px;
+    background-color: #2dbd2d;
+    color: #fff;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+   
+  }
+.button-login-register:hover {
+  
+  background-color: #27a027;
+
+  }
+
+.button-login-register:focus{
+  background-color: #238d23;
+  }
+  
+
+.errorMessage {/*mensajes de error de los formularios*/
+    margin: 2px 0 15px ;
+    font-size: 13px;
+    color: red;
+    
+  }
+
+
+.login-register-form .errorMessageFailedLog {/*mensaje de error nivel 2 de los formualrios */
+    margin: 2px 0 15px ;
+    color: #000000;
+    font-size: 16px;
+    
+  }
+  
+ 
+  .message{ /*mensaje de los formualrios */
+    margin: 7px 0 15px ;
+    color: #4f4f4f;
+    font-size: 14px;
+  }
+
+.button-Rev { /*estilo de los botones regulares del sistema*/
+  
+  padding: 5px 10px 5px 10px;
+  
+  background-color: #959695;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.button-Rev:hover {
+  
+  background-color: #808180;
+}
+.button-Rev:focus{
+ 
+  background-color: #6f706f;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.button-Rev2  { /*estilo de boton importantes del sistema */
+  /* width: 100%;  */
+  padding: 5px 10px 5px 10px;
+  background-color: #2a982a;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+
+}
+.button-Rev2:hover {
+  background-color: #27a027;
+}
+.button-Rev2:focus{
+  background-color: #238d23;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
