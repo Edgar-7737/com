@@ -1,0 +1,252 @@
+
+
+.container-body{
+  width: 100%;
+  display: grid; /* Aplicamos CSS GRID para el Contenedor principal */
+  grid-template-columns: 340px auto; /* Definimos dos columnas, una para el sidebar y otra para el contenido */
+  grid-template-rows: auto 1fr auto; /* Definimos tres filas, una para el header, otra para el contenido y otra para el footer */
+  grid-template-areas:
+    "header header header"
+    "sidebar contenido contenido"
+    "footer footer footer";
+  gap: 0px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.contenedor .header {
+  background: #00b506;
+  color: #fff;
+  min-height: 80px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.955);
+  grid-area: header; /* Asignamos el área de la cuadrícula para el header */
+  position: sticky; /* Hacemos que el header sea fijo */
+  top: 0; /* Posicionamos el header en la parte superior */
+  z-index: 1; /* Aseguramos que el header esté por encima de otros elementos */
+}
+  nav{
+    display: flex;
+  }
+
+.contenedor .contenido {
+  grid-area: contenido; /* Asignamos el área de la cuadrícula para el contenido */
+  padding: 20px;
+  overflow-y: auto; /* Agregamos scroll vertical si el contenido excede la altura */
+}
+
+.contenedor .sidebar {
+  grid-area: sidebar; /* Asignamos el área de la cuadrícula para el sidebar */
+  position: sticky; /* Hacemos que el sidebar sea fijo */
+  left: 0;
+  top: 80px; /* Posicionamos el sidebar en la parte izquierda */
+}
+
+.estyle-sidebar{
+  background-color: #ffffff;
+}
+
+.contenedor .footer {
+  background: #8ee5ec;
+  color: #fff;
+  min-height: 50px;
+  grid-area: footer; /* Asignamos el área de la cuadrícula para el footer */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.header-bitacora{
+ width: 100%; 
+ background-color: #ffffff;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.model-box{
+  width: 600px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form-container-model {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container-model .form-section-model {
+  flex: 1;
+  padding: 10px;
+}
+
+.form-container-model .section-radiobox{
+  
+    flex: 1;
+    padding: 10px;
+    /* margin: 60px 0px 0px 50px; */
+  
+}
+
+.model-form {
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+.radio-input {
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 15px;
+  height: 15px; 
+  border-style: none;
+  cursor: pointer;
+}
+
+.radio-input:hover {
+  background-color: #007bff; /* Cambia el color de fondo cuando está seleccionado */
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Inicio y registro*/
+.register-box {
+  width: 600px;
+  padding: 8% 0 0;
+  margin: auto;
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container .form-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.login-box {
+    width: 300px;
+    padding: 8% 0 0;
+    margin: auto;
+
+  }
+  .login-register-form {
+    font-family: "Roboto", sans-serif;
+    color: #2e2e2e;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 600px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+.input-box {
+  background: linear-gradient(to right,  #f9f1e8a5,  #f9efe4a5  ,#f9ebe0a5);
+    width: 100%;
+    border-style:unset;
+    margin: 0 0 15px;
+    padding: 9px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+
+.button-login-register {
+    outline: 0;
+    width: 100%;
+    padding: 9px;
+    margin: 0 0 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+   
+  }
+.button-login-register:hover {
+    background-color: #0269d7;
+  }
+
+.button-login-register:focus{
+    background-color: #0056b3;
+  }
+  
+
+.login-register-form .errorMessage {
+    margin: 2px 0 15px ;
+    color: #4f4f4f;
+    font-size: 11px;
+    color: red;
+    
+  }
+
+
+.login-register-form .errorMessageFailedLog {
+    margin: 2px 0 15px ;
+    color: #000000;
+    font-size: 16px;
+    
+  }
+  
+ 
+  .message{
+    margin: 7px 0 15px ;
+    color: #4f4f4f;
+    font-size: 14px;
+  }
+
+.button-Rev {
+  
+  padding: 5px 10px 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.button-Rev:hover {
+  background-color: #0269d7;
+}
+.button-Rev:focus{
+  background-color: #0056b3;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.button-Rev2  {
+  /* width: 100%;  */
+  padding: 5px 10px 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+
+}
+.button-Rev2:hover {
+  background-color: #0269d7;
+}
+.button-Rev2:focus{
+  background-color: #0056b3;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
